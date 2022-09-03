@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #800080;
+    font-family: 'Oswald', sans-serif;
+}
+
+.stop-watch-container {
+    background: #fff;
+    padding: 0.8rem 2rem 2.5rem ;
+}
+
+.title {
+    font-size: 2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+}
+
+.stop-watch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.digit-wrapper {
+    width: 6.5rem;
+    height: 8rem;
+    border: 1px solid #800080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.digit-wrapper h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+}
+
+.stop-watch-btns {
+    text-align: center;
+    margin-top: -1.3rem;
+}
+
+.watch-btn {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    background: #800080;
+    color: #fff;
+    border: none;
+    width: 7.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    margin: 0 0.2rem;
+    letter-spacing: 0.3rem;
+}
+
+.watch-btn:hover {
+    background: #540054;
+}
+
+.watch-btn.active,
+.watch-btn.active-stop{
+    pointer-events: none;
+    background: #3b003b;
+}
